@@ -8,7 +8,6 @@ void main() async {
   SharedPreferences preferences = await SharedPreferences.getInstance();
   initScreen = preferences.getInt('initScreen');
   await preferences.setInt('initScreen', 1);
-  //preferences.clear();
   runApp(const MyApp());
 }
 
